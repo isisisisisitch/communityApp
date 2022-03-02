@@ -7,10 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/AreaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/AreaDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao/AreaDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,21 +46,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/spring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ca.bytetube.community" />
+      <recent name="ca.bytetube.communityApp.dao" />
+      <recent name="ca.bytetube.community.dao" />
       <recent name="ca.bytetube.communityApp.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/resources/spring" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,7 +78,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AreaDaoTest.testQueryArea">
+    <configuration name="AreaDaoTest.testQueryArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communityApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.AreaDaoTest" />
+      <option name="METHOD_NAME" value="testQueryArea" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="appTomcat8.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.55" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -145,6 +167,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.appTomcat8.5" />
+      <item itemvalue="JUnit.AreaDaoTest.testQueryArea" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AreaDaoTest.testQueryArea" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -156,7 +187,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646237543393</updated>
-      <workItem from="1646237545818" duration="8617000" />
+      <workItem from="1646237545818" duration="10056000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -179,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646254580023</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.completed service and web configuration&#10;2.Integrated three layers of Spring">
+      <created>1646255515632</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646255515632</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +238,7 @@
     <MESSAGE value="1.completed 10 entities created&#10;2.completed 10 tables created" />
     <MESSAGE value="1.add css and js common files&#10;2.completed maven pom.xml file configuration" />
     <MESSAGE value="1.completed mybatis xml files configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.completed mybatis xml files configuration" />
+    <MESSAGE value="1.completed service and web configuration&#10;2.Integrated three layers of Spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.completed service and web configuration&#10;2.Integrated three layers of Spring" />
   </component>
 </project>
