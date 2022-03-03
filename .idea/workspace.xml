@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/AreaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/AreaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/superadmin/AreaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/AreaServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/communityApp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/communityApp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,9 +194,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.appTomcat8.5" />
       <item itemvalue="JUnit.AreaDaoTest.testQueryArea" />
       <item itemvalue="JUnit.AreaServiceTest.testGetAreaList" />
+      <item itemvalue="Tomcat Server.appTomcat8.5" />
     </list>
     <recent_temporary>
       <list>
@@ -221,7 +215,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646237543393</updated>
-      <workItem from="1646237545818" duration="12135000" />
+      <workItem from="1646237545818" duration="19634000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -258,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646257043026</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.tested AreaService and AreaController">
+      <created>1646259673788</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646259673788</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +282,7 @@
     <MESSAGE value="1.completed mybatis xml files configuration" />
     <MESSAGE value="1.completed service and web configuration&#10;2.Integrated three layers of Spring" />
     <MESSAGE value="1.tested AreaDao&#10;2.fixed dependency version problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.tested AreaDao&#10;2.fixed dependency version problems" />
+    <MESSAGE value="1.tested AreaService and AreaController" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.tested AreaService and AreaController" />
   </component>
 </project>
