@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/ShopDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao/ShopDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/superadmin/AreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/superadmin/AreaController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -50,17 +51,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web" />
       <recent name="$PROJECT_DIR$/src/test/java/ca/bytetube/community" />
       <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ca.bytetube.community.dao" />
+      <recent name="ca.bytetube.communityApp.dao" />
       <recent name="ca.bytetube.communityApp.service" />
       <recent name="ca.bytetube.community" />
-      <recent name="ca.bytetube.communityApp.dao" />
-      <recent name="ca.bytetube.community.dao" />
       <recent name="ca.bytetube.communityApp.entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -93,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.appTomcat8.5">
+  <component name="RunManager" selected="JUnit.ShopDaoTest.testUpdateShop">
     <configuration name="AreaDaoTest.testQueryArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
@@ -121,6 +122,38 @@
       <option name="PACKAGE_NAME" value="ca.bytetube.community.service" />
       <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.service.AreaServiceTest" />
       <option name="METHOD_NAME" value="testGetAreaList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDaoTest.testInsertShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communityApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="testInsertShop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDaoTest.testUpdateShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communityApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="testUpdateShop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,9 +235,13 @@
       <item itemvalue="JUnit.AreaDaoTest.testQueryArea" />
       <item itemvalue="JUnit.AreaServiceTest.testGetAreaList" />
       <item itemvalue="Tomcat Server.appTomcat8.5" />
+      <item itemvalue="JUnit.ShopDaoTest.testInsertShop" />
+      <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
+        <item itemvalue="JUnit.ShopDaoTest.testInsertShop" />
         <item itemvalue="JUnit.AreaServiceTest.testGetAreaList" />
         <item itemvalue="JUnit.AreaDaoTest.testQueryArea" />
       </list>
@@ -222,7 +259,7 @@
       <updated>1646237543393</updated>
       <workItem from="1646237545818" duration="19634000" />
       <workItem from="1646274594822" duration="87000" />
-      <workItem from="1646416893820" duration="1671000" />
+      <workItem from="1646416893820" duration="3178000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -273,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646274669823</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1.completed logback configuration&#10;2.tested logback configuration">
+      <created>1646422170585</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646422170585</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +344,7 @@
     <MESSAGE value="1.tested AreaDao&#10;2.fixed dependency version problems" />
     <MESSAGE value="1.tested AreaService and AreaController" />
     <MESSAGE value="1.added sql file" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added sql file" />
+    <MESSAGE value="1.completed logback configuration&#10;2.tested logback configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.completed logback configuration&#10;2.tested logback configuration" />
   </component>
 </project>
