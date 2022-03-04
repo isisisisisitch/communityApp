@@ -7,12 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dto/ImageHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/ImageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/PathUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/watermark.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dto/ShopExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/enums/ShopStateEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,11 +57,11 @@
       <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ca.bytetube.communityApp.util" />
+      <recent name="ca.bytetube.communityApp.enums" />
       <recent name="ca.bytetube.communityApp.dto" />
+      <recent name="ca.bytetube.communityApp.util" />
       <recent name="ca.bytetube.community.dao" />
       <recent name="ca.bytetube.communityApp.dao" />
-      <recent name="ca.bytetube.communityApp.service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -276,7 +273,7 @@
       <updated>1646237543393</updated>
       <workItem from="1646237545818" duration="19634000" />
       <workItem from="1646274594822" duration="87000" />
-      <workItem from="1646416893820" duration="5127000" />
+      <workItem from="1646416893820" duration="5950000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -341,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646424092525</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1.completed image util">
+      <created>1646425909448</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1646425909448</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,6 +374,7 @@
     <MESSAGE value="1.added sql file" />
     <MESSAGE value="1.completed logback configuration&#10;2.tested logback configuration" />
     <MESSAGE value="1.completed shop add and update" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.completed shop add and update" />
+    <MESSAGE value="1.completed image util" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.completed image util" />
   </component>
 </project>
