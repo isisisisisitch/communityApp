@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/superadmin/AreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/superadmin/AreaController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,13 +42,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web" />
+      <recent name="$PROJECT_DIR$/src/test/java/ca/bytetube/community" />
+      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ca.bytetube.communityApp.service" />
       <recent name="ca.bytetube.community" />
@@ -54,12 +63,8 @@
       <recent name="ca.bytetube.community.dao" />
       <recent name="ca.bytetube.communityApp.entity" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web" />
-      <recent name="$PROJECT_DIR$/src/test/java/ca/bytetube/community" />
-      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/src/main/resources/spring" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -216,6 +221,8 @@
       <option name="presentableId" value="Default" />
       <updated>1646237543393</updated>
       <workItem from="1646237545818" duration="19634000" />
+      <workItem from="1646274594822" duration="87000" />
+      <workItem from="1646416893820" duration="1671000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -259,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646259673788</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1.added sql file">
+      <created>1646274669823</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646274669823</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +284,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -283,6 +299,7 @@
     <MESSAGE value="1.completed service and web configuration&#10;2.Integrated three layers of Spring" />
     <MESSAGE value="1.tested AreaDao&#10;2.fixed dependency version problems" />
     <MESSAGE value="1.tested AreaService and AreaController" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.tested AreaService and AreaController" />
+    <MESSAGE value="1.added sql file" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added sql file" />
   </component>
 </project>

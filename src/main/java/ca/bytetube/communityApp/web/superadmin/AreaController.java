@@ -23,13 +23,15 @@ import java.util.Map;
 @RequestMapping("/superadmin")
 public class AreaController {
 
+	Logger logger = LoggerFactory.getLogger(AreaController.class);
 	@Autowired
 	private AreaService areaService;
 
 	@RequestMapping(value = "/listarea", method = RequestMethod.GET)
 	@ResponseBody//以json数据类型返回
 	private Map<String, Object> listArea() {
-
+		logger.info("===start===");
+		long startTime = System.currentTimeMillis();
 		Map<String, Object> modelMap = new HashMap<String, Object>();
 		List<Area> list = new ArrayList<Area>();
 		try {
@@ -43,6 +45,10 @@ public class AreaController {
 			modelMap.put("success", false);
 			modelMap.put("errMsg", e.toString());
 		}
+		logger.error("test error!");
+		long endTime = System.currentTimeMillis();
+		logger.debug("costTime:[{}ms]", endTime - startTime);
+		logger.info("===end===");
 
 		return modelMap;
 	}
