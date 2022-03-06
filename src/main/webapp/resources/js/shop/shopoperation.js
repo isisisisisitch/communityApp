@@ -7,7 +7,7 @@ $(function() {
 	var initUrl = '/communityApp/shopadmin/getshopinitinfo';
 	// 注册店铺的URL
 	var registerShopUrl = '/communityApp/shopadmin/registershop';
-	alert(initUrl);
+	//alert(initUrl);
 	getShopInitInfo();
 
 	// 取得所有二级店铺类别以及区域信息，并分别赋值进类别列表以及区域列表

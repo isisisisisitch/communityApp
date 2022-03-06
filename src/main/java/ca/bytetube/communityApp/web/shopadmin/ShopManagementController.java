@@ -1,5 +1,9 @@
 package ca.bytetube.communityApp.web.shopadmin;
 
+import ca.bytetube.communityApp.entity.Area;
+import ca.bytetube.communityApp.entity.ShopCategory;
+import ca.bytetube.communityApp.service.AreaService;
+import ca.bytetube.communityApp.service.ShopCategoryService;
 import ca.bytetube.communityApp.util.HttpServletRequestUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import ca.bytetube.communityApp.dto.ImageHolder;
@@ -29,7 +33,29 @@ import java.util.Map;
 public class ShopManagementController {
 	@Autowired
 	private ShopService shopService;
+	@Autowired
+	private ShopCategoryService shopCategoryService;
+	@Autowired
+	private AreaService areaService;
 
+	@RequestMapping(value = "/getshopinitinfo", method = RequestMethod.GET)
+	@ResponseBody
+	private Map<String, Object> getShopInitInfo() {
+		Map<String, Object> modelMap = new HashMap<>();
+		List<ShopCategory> shopCategoryList = new ArrayList<>();
+		List<Area> areaList = new ArrayList<>();
+		try {
+			shopCategoryList = shopCategoryService.getShopCategoryList(new ShopCategory());
+			areaList = areaService.getAreaList();
+			modelMap.put("shopCategoryList", shopCategoryList);
+			modelMap.put("areaList", areaList);
+			modelMap.put("success", true);
+		} catch (Exception e) {
+			modelMap.put("success", false);
+			modelMap.put("errMsg", e.getMessage());
+		}
+		return modelMap;
+	}
 
 	@RequestMapping(value = "/registershop", method = RequestMethod.POST)
 	@ResponseBody
