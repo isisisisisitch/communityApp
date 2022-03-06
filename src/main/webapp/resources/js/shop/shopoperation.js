@@ -63,6 +63,14 @@ $(function() {
 		// 将shop json对象转成字符流保存至表单对象key为shopStr的的键值对里
 		formData.append('shopStr', JSON.stringify(shop));
 
+		// 获取表单里输入的验证码
+		var verifyCodeActual = $('#j_captcha').val();
+		if (!verifyCodeActual) {
+			$.toast('pls input verifyCode！');
+			return;
+		}
+		formData.append('verifyCodeActual', verifyCodeActual);
+
 		// 将数据提交至后台处理相关操作
 		$.ajax({
 			url : (isEdit ? editShopUrl : registerShopUrl),
