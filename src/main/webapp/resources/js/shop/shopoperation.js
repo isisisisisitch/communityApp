@@ -33,10 +33,6 @@ $(function() {
 	$('#submit').click(function() {
 		// 创建shop对象
 		var shop = {};
-		if (isEdit) {
-			// 若属于编辑，则给shopId赋值
-			shop.shopId = shopId;
-		}
 		// 获取表单里的数据并填充进对应的店铺属性中
 		shop.shopName = $('#shop-name').val();
 		shop.shopAddr = $('#shop-addr').val();
@@ -73,7 +69,7 @@ $(function() {
 
 		// 将数据提交至后台处理相关操作
 		$.ajax({
-			url : (isEdit ? editShopUrl : registerShopUrl),
+			url : registerShopUrl,
 			type : 'POST',
 			data : formData,
 			contentType : false,
