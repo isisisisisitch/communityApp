@@ -4,6 +4,7 @@ import ca.bytetube.communityApp.entity.Area;
 import ca.bytetube.communityApp.entity.ShopCategory;
 import ca.bytetube.communityApp.service.AreaService;
 import ca.bytetube.communityApp.service.ShopCategoryService;
+import ca.bytetube.communityApp.util.CodeUtil;
 import ca.bytetube.communityApp.util.HttpServletRequestUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import ca.bytetube.communityApp.dto.ImageHolder;
@@ -61,6 +62,12 @@ public class ShopManagementController {
 	@ResponseBody
 	private Map<String, Object> registerShop(HttpServletRequest request) {
 		Map<String, Object> modelMap = new HashMap<String, Object>();
+
+		if (!CodeUtil.checkVerifyCode(request)) {
+			modelMap.put("success", false);
+			modelMap.put("errMsg", "error verify Code ");
+			return modelMap;
+		}
 
 		// 1.接收并转化相应的参数，包括店铺信息以及图片信息
 		String shopStr = HttpServletRequestUtil.getString(request, "shopStr");
