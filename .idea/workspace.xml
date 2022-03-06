@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/HttpServletRequestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -50,20 +50,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ca.bytetube.communityApp.util" />
       <recent name="ca.bytetube.communityApp.web.shopadmin" />
+      <recent name="ca.bytetube.communityApp.util" />
       <recent name="ca.bytetube.community.service" />
       <recent name="ca.bytetube.communityApp.service.impl" />
       <recent name="ca.bytetube.communityApp.service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -71,10 +72,10 @@
     <treeState>
       <expand>
         <path>
-          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 3 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 3 services " type="fcff1e1b:RestServiceStructure$RootNode" />
           <item name="communityApp" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
@@ -93,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShopServiceTest.testAddShop">
+  <component name="RunManager" selected="Tomcat Server.appTomcat8.5">
     <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.bytetube.communityApp.util.ImageUtil" />
       <module name="communityApp" />
@@ -273,7 +274,7 @@
       <updated>1646237543393</updated>
       <workItem from="1646237545818" duration="19634000" />
       <workItem from="1646274594822" duration="87000" />
-      <workItem from="1646416893820" duration="10220000" />
+      <workItem from="1646416893820" duration="12521000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -359,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646428974644</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1.completed registerShop in ShopManagementController">
+      <created>1646431927941</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1646431927941</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +400,7 @@
     <MESSAGE value="1.completed shopExecution" />
     <MESSAGE value="1.completed addShop in ShopService" />
     <MESSAGE value="1.completed addShop in ShopService&#10;2.added exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.completed addShop in ShopService&#10;2.added exceptions" />
+    <MESSAGE value="1.completed registerShop in ShopManagementController" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.completed registerShop in ShopManagementController" />
   </component>
 </project>
