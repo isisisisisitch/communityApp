@@ -9,5 +9,9 @@ public interface ProductCategoryDao {
 	 */
 	List<ProductCategory> queryProductCategoryList(long shopId);
 
+	/**
+	 * 批量新增商品类别
+	 */
+	int batchInsertProductCategory(List<ProductCategory> productCategoryList);
 
 }

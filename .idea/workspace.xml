@@ -7,12 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategorymanagement.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/productcategorymanagement.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productcategorymanagement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dto/ProductCategoryExecution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ProductCategoryManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ProductCategoryManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/ProductCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/ProductCategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ProductCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ProductCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao/ProductCategoryDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao/ProductCategoryDaoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,23 +53,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ca.bytetube.communityApp.dto" />
+      <recent name="ca.bytetube.communityApp.enums" />
+      <recent name="ca.bytetube.communityApp.web.shopadmin" />
+      <recent name="ca.bytetube.communityApp.service.impl" />
+      <recent name="ca.bytetube.communityApp.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/shop" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/css/shop" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/css" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ca.bytetube.communityApp.enums" />
-      <recent name="ca.bytetube.communityApp.dto" />
-      <recent name="ca.bytetube.communityApp.web.shopadmin" />
-      <recent name="ca.bytetube.communityApp.service.impl" />
-      <recent name="ca.bytetube.communityApp.service" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -97,7 +98,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.appTomcat8.5">
+  <component name="RunManager" selected="JUnit.ProductCategoryDaoTest.testABatchInsertProductCategory">
+    <configuration name="ProductCategoryDaoTest.testABatchInsertProductCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communityApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ProductCategoryDaoTest" />
+      <option name="METHOD_NAME" value="testABatchInsertProductCategory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductCategoryDaoTest.testBQueryByShopId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
@@ -141,22 +158,6 @@
       <option name="PACKAGE_NAME" value="ca.bytetube.community.service" />
       <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.service.ShopServiceTest" />
       <option name="METHOD_NAME" value="testGetShopList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShopServiceTest.testModifyShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="communityApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.bytetube.community.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.bytetube.community.service" />
-      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.service.ShopServiceTest" />
-      <option name="METHOD_NAME" value="testModifyShop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -274,20 +275,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
       <item itemvalue="JUnit.ShopDaoTest.testQueryShopListAndCount" />
       <item itemvalue="JUnit.ShopServiceTest.testGetShopList" />
       <item itemvalue="JUnit.ProductCategoryDaoTest.testBQueryByShopId" />
       <item itemvalue="Tomcat Server.appTomcat8.5" />
       <item itemvalue="Tomcat Server.shoplist.html" />
+      <item itemvalue="JUnit.ProductCategoryDaoTest.testABatchInsertProductCategory" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductCategoryDaoTest.testABatchInsertProductCategory" />
         <item itemvalue="JUnit.ProductCategoryDaoTest.testBQueryByShopId" />
         <item itemvalue="Tomcat Server.shoplist.html" />
         <item itemvalue="JUnit.ShopServiceTest.testGetShopList" />
         <item itemvalue="JUnit.ShopDaoTest.testQueryShopListAndCount" />
-        <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
       </list>
     </recent_temporary>
   </component>
@@ -306,6 +307,7 @@
       <workItem from="1646416893820" duration="30082000" />
       <workItem from="1647013446206" duration="11524000" />
       <workItem from="1647030014891" duration="3691000" />
+      <workItem from="1647033752578" duration="1243000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -503,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647033024330</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="1.add product category management front end &#10;(1.http://localhost:8080/communityApp/shopadmin/shoplist&#10; 2. http://localhost:8080/communityApp/shopadmin/productcategorymanagement)&#10; 2.add route productcategorymanagement in shopAdminController">
+      <created>1647033986985</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1647033986985</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,8 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.tested AreaDao&#10;2.fixed dependency version problems" />
-    <MESSAGE value="1.tested AreaService and AreaController" />
     <MESSAGE value="1.added sql file" />
     <MESSAGE value="1.completed logback configuration&#10;2.tested logback configuration" />
     <MESSAGE value="1.completed shop add and update" />
@@ -548,7 +555,9 @@
     <MESSAGE value="1.added shoplist.html and shoplist.js&#10;2.added route shoplist in shopAdminController(http://localhost:8080/communityApp/shopadmin/shoplist)" />
     <MESSAGE value="1.added shopmanagement.html and shopmanagement.js&#10;2.added route shopmanagement in shopAdminController(http://localhost:8080/communityApp/shopadmin/shopmanagement)" />
     <MESSAGE value="1.added product Category List(http://localhost:8080/communityApp/shopadmin/getproductcategorylist)" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added product Category List(http://localhost:8080/communityApp/shopadmin/getproductcategorylist)" />
+    <MESSAGE value="1.add product category management front end &#10;(1.http://localhost:8080/communityApp/shopadmin/shoplist&#10; 2. http://localhost:8080/communityApp/shopadmin/productcategorymanagement)" />
+    <MESSAGE value="1.add product category management front end &#10;(1.http://localhost:8080/communityApp/shopadmin/shoplist&#10; 2. http://localhost:8080/communityApp/shopadmin/productcategorymanagement)&#10; 2.add route productcategorymanagement in shopAdminController" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.add product category management front end &#10;(1.http://localhost:8080/communityApp/shopadmin/shoplist&#10; 2. http://localhost:8080/communityApp/shopadmin/productcategorymanagement)&#10; 2.add route productcategorymanagement in shopAdminController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
