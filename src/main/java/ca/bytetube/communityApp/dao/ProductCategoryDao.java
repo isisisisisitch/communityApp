@@ -1,6 +1,8 @@
 package ca.bytetube.communityApp.dao;
 
 import ca.bytetube.communityApp.entity.ProductCategory;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface ProductCategoryDao {
@@ -13,5 +15,10 @@ public interface ProductCategoryDao {
 	 * 批量新增商品类别
 	 */
 	int batchInsertProductCategory(List<ProductCategory> productCategoryList);
+
+	/**
+	 * 删除指定商品类别
+	 */
+	int deleteProductCategory(@Param("productCategoryId") long productCategoryId, @Param("shopId") long shopId);
 
 }

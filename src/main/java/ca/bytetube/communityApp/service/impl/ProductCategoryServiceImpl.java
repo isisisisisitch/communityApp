@@ -42,4 +42,24 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 			return new ProductCategoryExecution(ProductCategoryStateEnum.EMPTY_LIST);
 		}
 	}
+
+
+	@Override
+	@Transactional
+	public ProductCategoryExecution deleteProductCategory(long productCategoryId, long shopId)
+			throws ProductCategoryOperationException {
+		//todo 将此类别下的商品里的类别id置为null，再删除改商品类别
+
+		// 删除该productCategory
+		try {
+			int effectedNum = productCategoryDao.deleteProductCategory(productCategoryId, shopId);
+			if (effectedNum <= 0) {
+				throw new ProductCategoryOperationException("failed to delete the product category!");
+			} else {
+				return new ProductCategoryExecution(ProductCategoryStateEnum.SUCCESS);
+			}
+		} catch (Exception e) {
+			throw new ProductCategoryOperationException("deleteProductCategory error:" + e.getMessage());
+		}
+	}
 }

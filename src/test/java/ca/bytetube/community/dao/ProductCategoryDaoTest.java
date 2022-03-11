@@ -7,7 +7,6 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -46,4 +45,17 @@ public class ProductCategoryDaoTest extends BaseTest {
 		assertEquals(2, effectedNum);
 	}
 
+
+	@Test
+	public void testCDeleteProductCategory() throws Exception {
+		long shopId = 1;
+		List<ProductCategory> productCategoryList = productCategoryDao.queryProductCategoryList(shopId);
+		for (ProductCategory pc : productCategoryList) {
+			if ("category10".equals(pc.getProductCategoryName()) || "category20".equals(pc.getProductCategoryName())) {
+				int effectedNum = productCategoryDao.deleteProductCategory(pc.getProductCategoryId(),
+						shopId);
+				assertEquals(1, effectedNum);
+			}
+		}
+	}
 }
