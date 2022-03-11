@@ -8,6 +8,12 @@ import ca.bytetube.communityApp.exceptions.ShopOperationException;
 public interface ShopService {
 
 	/**
+	 * 根据shopCondition分页返回相应店铺列表
+	 */
+	public ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize);
+
+
+	/**
 	 * 通过店铺Id获取店铺信息
 	 */
 	Shop getByShopId(long shopId);

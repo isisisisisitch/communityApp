@@ -8,17 +8,37 @@ import ca.bytetube.communityApp.enums.ShopStateEnum;
 import ca.bytetube.communityApp.exceptions.ShopOperationException;
 import ca.bytetube.communityApp.service.ShopService;
 import ca.bytetube.communityApp.util.ImageUtil;
+import ca.bytetube.communityApp.util.PageCalculator;
 import ca.bytetube.communityApp.util.PathUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.Date;
+import java.util.List;
 
 
 @Service
 public class ShopServiceImpl implements ShopService {
 	@Autowired
 	private ShopDao shopDao;
+
+	@Override
+	public ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize) {
+		//将页码转换成行码
+		int rowIndex = PageCalculator.calculateRowIndex(pageIndex, pageSize);
+		//依据查询条件，调用dao层返回相关的店铺列表
+		List<Shop> shopList = shopDao.queryShopList(shopCondition, rowIndex, pageSize);
+		//依据相同的查询条件，返回店铺总数
+		int count = shopDao.queryShopCount(shopCondition);
+		ShopExecution se = new ShopExecution();
+		if (shopList != null) {
+			se.setShopList(shopList);
+			se.setCount(count);
+		} else {
+			se.setState(ShopStateEnum.INNER_ERROR.getState());
+		}
+		return se;
+	}
 
 	@Override
 	public Shop getByShopId(long shopId) {
