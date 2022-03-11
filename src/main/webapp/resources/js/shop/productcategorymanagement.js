@@ -71,12 +71,14 @@ $(function () {
         });
     });
 
+    //temp 表示新增的 now表示已经添加的
     $('.category-wrap').on('click', '.row-product-category.temp .delete',
         function (e) {
             console.log($(this).parent().parent());
             $(this).parent().parent().remove();
 
         });
+
     $('.category-wrap').on('click', '.row-product-category.now .delete',
         function (e) {
             var target = e.currentTarget;
