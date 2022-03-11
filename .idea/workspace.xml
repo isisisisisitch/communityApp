@@ -6,11 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
+    <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="1.added getShopById in ShopManagementController(http://localhost:8080/communityApp/shopadmin/getshopbyid?shopId=1)&#10;2.added modifyShop in ShopManagementController&#10;3.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ShopServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/ShopServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,10 +71,10 @@
     <treeState>
       <expand>
         <path>
-          <item name="Found 4 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 5 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 4 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 5 services " type="fcff1e1b:RestServiceStructure$RootNode" />
           <item name="communityApp" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
@@ -95,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShopServiceTest.testModifyShop">
+  <component name="RunManager" selected="Tomcat Server.appTomcat8.5">
     <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.bytetube.communityApp.util.ImageUtil" />
       <module name="communityApp" />
@@ -276,7 +274,7 @@
       <workItem from="1646237545818" duration="19634000" />
       <workItem from="1646274594822" duration="87000" />
       <workItem from="1646416893820" duration="30082000" />
-      <workItem from="1647013446206" duration="2082000" />
+      <workItem from="1647013446206" duration="3526000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -418,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647014759258</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="1.added modifyShop in ShopService">
+      <created>1647015800601</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1647015800601</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,14 +464,15 @@
     <MESSAGE value="1.added verifyCode in back-end" />
     <MESSAGE value="1.modified verify code function in both front and back end through debugging" />
     <MESSAGE value="1.added queryByShopId in ShopDao" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added queryByShopId in ShopDao" />
+    <MESSAGE value="1.added modifyShop in ShopService" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added modifyShop in ShopService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java</url>
-          <line>63</line>
+          <line>146</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
