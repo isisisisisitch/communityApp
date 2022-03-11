@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface ShopDao {
 
+	Shop queryByShopId(long shopId);
 
 	int insertShop(Shop shop);
 

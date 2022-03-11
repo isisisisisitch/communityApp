@@ -8,10 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/ShopDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao/ShopDaoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,10 +73,10 @@
     <treeState>
       <expand>
         <path>
-          <item name="Found 3 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 4 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 3 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 4 services " type="fcff1e1b:RestServiceStructure$RootNode" />
           <item name="communityApp" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
@@ -96,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.appTomcat8.5">
+  <component name="RunManager" selected="JUnit.ShopDaoTest.testQueryByShopId">
     <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.bytetube.communityApp.util.ImageUtil" />
       <module name="communityApp" />
@@ -142,6 +141,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShopDaoTest.testQueryByShopId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communityApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="testQueryByShopId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShopDaoTest.testUpdateShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
@@ -153,22 +168,6 @@
       <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
       <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ShopDaoTest" />
       <option name="METHOD_NAME" value="testUpdateShop" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShopServiceTest.testAddShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="communityApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.bytetube.community.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.bytetube.community.service" />
-      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.service.ShopServiceTest" />
-      <option name="METHOD_NAME" value="testAddShop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -247,17 +246,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.appTomcat8.5" />
+      <item itemvalue="Application.ImageUtil" />
       <item itemvalue="JUnit.ShopDaoTest.testInsertShop" />
       <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
-      <item itemvalue="Application.ImageUtil" />
-      <item itemvalue="JUnit.ShopServiceTest.testAddShop" />
       <item itemvalue="JUnit.ShopCategoryDaoTest.testQueryShopCategory" />
+      <item itemvalue="Tomcat Server.appTomcat8.5" />
+      <item itemvalue="JUnit.ShopDaoTest.testQueryByShopId" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShopDaoTest.testQueryByShopId" />
         <item itemvalue="JUnit.ShopCategoryDaoTest.testQueryShopCategory" />
-        <item itemvalue="JUnit.ShopServiceTest.testAddShop" />
         <item itemvalue="Application.ImageUtil" />
         <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
         <item itemvalue="JUnit.ShopDaoTest.testInsertShop" />
@@ -276,7 +275,8 @@
       <updated>1646237543393</updated>
       <workItem from="1646237545818" duration="19634000" />
       <workItem from="1646274594822" duration="87000" />
-      <workItem from="1646416893820" duration="20462000" />
+      <workItem from="1646416893820" duration="30082000" />
+      <workItem from="1647013446206" duration="1093000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -404,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646589110711</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="1.modified verify code function in both front and back end through debugging">
+      <created>1646591520884</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1646591520884</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +450,8 @@
     <MESSAGE value="1.added shop category and area information acquisition&#10;2.test dao by ShopCategoryDaoTest&#10;3.test controller by http://localhost:8080/communityApp/shopadmin/shopoperation" />
     <MESSAGE value="1.added verifyCode in front-end" />
     <MESSAGE value="1.added verifyCode in back-end" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added verifyCode in back-end" />
+    <MESSAGE value="1.modified verify code function in both front and back end through debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.modified verify code function in both front and back end through debugging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
