@@ -10,6 +10,7 @@ import ca.bytetube.communityApp.entity.Shop;
 import ca.bytetube.communityApp.entity.ShopCategory;
 import ca.bytetube.communityApp.enums.ShopStateEnum;
 import ca.bytetube.communityApp.exceptions.ShopOperationException;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -24,6 +25,19 @@ import static org.junit.Assert.assertEquals;
 public class ShopServiceTest extends BaseTest {
 	@Autowired
 	private ShopService shopService;
+
+	@Test
+	public void testModifyShop() throws ShopOperationException, FileNotFoundException {
+		Shop shop = new Shop();
+		shop.setShopId(1L);
+		shop.setShopName("modified shop name");
+		File shopImg = new File("/Users/dalluo/Desktop/image/logo3.jpeg");
+		InputStream is = new FileInputStream(shopImg);
+		ImageHolder imageHolder = new ImageHolder("logo3_modified.jpg", is);
+		ShopExecution shopExecution = shopService.modifyShop(shop, imageHolder);
+		System.out.println("new images addr ：" + shopExecution.getShop().getShopImg());
+	}
+
 
 	@Test
 	public void testAddShop() throws ShopOperationException, FileNotFoundException {
