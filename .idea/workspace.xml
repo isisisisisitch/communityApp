@@ -6,9 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
+    <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="1.added shoplist.html and shoplist.js&#10;2.added route">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/shoplist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/shopmanagement.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shoplist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/css" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -60,11 +64,11 @@
       <recent name="ca.bytetube.communityApp.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/shop" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/js" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
-      <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -94,22 +98,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.appTomcat8.5">
-    <configuration name="ShopCategoryDaoTest.testQueryShopCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="communityApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
-      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ShopCategoryDaoTest" />
-      <option name="METHOD_NAME" value="testQueryShopCategory" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ShopDaoTest.testQueryByShopId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
@@ -246,21 +234,60 @@
         </option>
       </method>
     </configuration>
+    <configuration name="shoplist.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.55" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/html/shop/shoplist.html" />
+      <deployment>
+        <artifact name="communityApp:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/communityApp_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="shoplist_html_communityApp" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="communityApp:war" />
+        </option>
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.ShopCategoryDaoTest.testQueryShopCategory" />
-      <item itemvalue="Tomcat Server.appTomcat8.5" />
       <item itemvalue="JUnit.ShopDaoTest.testQueryByShopId" />
       <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
       <item itemvalue="JUnit.ShopDaoTest.testQueryShopListAndCount" />
       <item itemvalue="JUnit.ShopServiceTest.testGetShopList" />
+      <item itemvalue="Tomcat Server.appTomcat8.5" />
+      <item itemvalue="Tomcat Server.shoplist.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Tomcat Server.shoplist.html" />
         <item itemvalue="JUnit.ShopServiceTest.testGetShopList" />
         <item itemvalue="JUnit.ShopDaoTest.testQueryShopListAndCount" />
         <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
         <item itemvalue="JUnit.ShopDaoTest.testQueryByShopId" />
-        <item itemvalue="JUnit.ShopCategoryDaoTest.testQueryShopCategory" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +304,8 @@
       <workItem from="1646237545818" duration="19634000" />
       <workItem from="1646274594822" duration="87000" />
       <workItem from="1646416893820" duration="30082000" />
-      <workItem from="1647013446206" duration="9914000" />
+      <workItem from="1647013446206" duration="11524000" />
+      <workItem from="1647030014891" duration="254000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -447,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647026658296</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="1.added getShopList and getShopManagementInfo in controller">
+      <created>1647028478599</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1647028478599</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.completed 10 entities created&#10;2.completed 10 tables created" />
     <MESSAGE value="1.add css and js common files&#10;2.completed maven pom.xml file configuration" />
     <MESSAGE value="1.completed mybatis xml files configuration" />
     <MESSAGE value="1.completed service and web configuration&#10;2.Integrated three layers of Spring" />
@@ -492,7 +526,8 @@
     <MESSAGE value="1.added getShopById in ShopManagementController(http://localhost:8080/communityApp/shopadmin/getshopbyid?shopId=1)&#10;2.added modifyShop in ShopManagementController&#10;3.get person info from session" />
     <MESSAGE value="1.added getShopInfo in shopoperation.js&#10;2.debugged getShopById and modifyShop both front end and back end(http://localhost:8080/communityApp/shopadmin/shopoperation?shopId=1)" />
     <MESSAGE value="1.added ShopList in both dao and service" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added ShopList in both dao and service" />
+    <MESSAGE value="1.added getShopList and getShopManagementInfo in controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added getShopList and getShopManagementInfo in controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
