@@ -7,15 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/ProductCategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dto/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/enums/ProductCategoryStateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ProductCategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ProductCategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ProductCategoryManagementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao/ProductCategoryDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategorymanagement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/productcategorymanagement.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productcategorymanagement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ProductCategoryManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ProductCategoryManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/js/shop" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -56,11 +53,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/shop" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/css/shop" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/css" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ca.bytetube.communityApp.enums" />
@@ -280,9 +277,9 @@
       <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
       <item itemvalue="JUnit.ShopDaoTest.testQueryShopListAndCount" />
       <item itemvalue="JUnit.ShopServiceTest.testGetShopList" />
+      <item itemvalue="JUnit.ProductCategoryDaoTest.testBQueryByShopId" />
       <item itemvalue="Tomcat Server.appTomcat8.5" />
       <item itemvalue="Tomcat Server.shoplist.html" />
-      <item itemvalue="JUnit.ProductCategoryDaoTest.testBQueryByShopId" />
     </list>
     <recent_temporary>
       <list>
@@ -308,7 +305,7 @@
       <workItem from="1646274594822" duration="87000" />
       <workItem from="1646416893820" duration="30082000" />
       <workItem from="1647013446206" duration="11524000" />
-      <workItem from="1647030014891" duration="2873000" />
+      <workItem from="1647030014891" duration="3691000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -499,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647031204499</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="1.added product Category List(http://localhost:8080/communityApp/shopadmin/getproductcategorylist)">
+      <created>1647033024330</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1647033024330</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.completed service and web configuration&#10;2.Integrated three layers of Spring" />
     <MESSAGE value="1.tested AreaDao&#10;2.fixed dependency version problems" />
     <MESSAGE value="1.tested AreaService and AreaController" />
     <MESSAGE value="1.added sql file" />
@@ -544,7 +547,8 @@
     <MESSAGE value="1.added getShopList and getShopManagementInfo in controller" />
     <MESSAGE value="1.added shoplist.html and shoplist.js&#10;2.added route shoplist in shopAdminController(http://localhost:8080/communityApp/shopadmin/shoplist)" />
     <MESSAGE value="1.added shopmanagement.html and shopmanagement.js&#10;2.added route shopmanagement in shopAdminController(http://localhost:8080/communityApp/shopadmin/shopmanagement)" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added shopmanagement.html and shopmanagement.js&#10;2.added route shopmanagement in shopAdminController(http://localhost:8080/communityApp/shopadmin/shopmanagement)" />
+    <MESSAGE value="1.added product Category List(http://localhost:8080/communityApp/shopadmin/getproductcategorylist)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added product Category List(http://localhost:8080/communityApp/shopadmin/getproductcategorylist)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
