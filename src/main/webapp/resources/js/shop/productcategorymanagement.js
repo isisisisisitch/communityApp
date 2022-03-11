@@ -34,12 +34,11 @@ $(function () {
             });
     }
 
-    $('#new')
-        .click(
+    $('#new').click(
             function () {
                 var tempHtml = '<div class="row row-product-category temp">'
-                    + '<div class="col-33"><input class="category-input category" type="text" placeholder="分类名"></div>'
-                    + '<div class="col-33"><input class="category-input priority" type="number" placeholder="优先级"></div>'
+                    + '<div class="col-33"><input class="category-input category" type="text" placeholder="product category name"></div>'
+                    + '<div class="col-33"><input class="category-input priority" type="number" placeholder="priority"></div>'
                     + '<div class="col-33"><a href="#" class="button delete">del</a></div>'
                     + '</div>';
                 $('.category-wrap').append(tempHtml);
