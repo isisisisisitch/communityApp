@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/PageCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/ShopDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ShopServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao/ShopDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/ShopServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,10 +71,10 @@
     <treeState>
       <expand>
         <path>
-          <item name="Found 5 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 7 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
         <path>
-          <item name="Found 5 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 7 services " type="fcff1e1b:RestServiceStructure$RootNode" />
           <item name="communityApp" type="c588b436:RestServiceStructure$ProjectNode" />
         </path>
       </expand>
@@ -99,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShopServiceTest.testGetShopList">
+  <component name="RunManager" selected="Tomcat Server.appTomcat8.5">
     <configuration name="ShopCategoryDaoTest.testQueryShopCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
@@ -283,7 +277,7 @@
       <workItem from="1646237545818" duration="19634000" />
       <workItem from="1646274594822" duration="87000" />
       <workItem from="1646416893820" duration="30082000" />
-      <workItem from="1647013446206" duration="8181000" />
+      <workItem from="1647013446206" duration="9914000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -446,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647019242373</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="1.added ShopList in both dao and service">
+      <created>1647026658296</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1647026658296</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,19 +491,20 @@
     <MESSAGE value="1.added modifyShop in ShopService" />
     <MESSAGE value="1.added getShopById in ShopManagementController(http://localhost:8080/communityApp/shopadmin/getshopbyid?shopId=1)&#10;2.added modifyShop in ShopManagementController&#10;3.get person info from session" />
     <MESSAGE value="1.added getShopInfo in shopoperation.js&#10;2.debugged getShopById and modifyShop both front end and back end(http://localhost:8080/communityApp/shopadmin/shopoperation?shopId=1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added getShopInfo in shopoperation.js&#10;2.debugged getShopById and modifyShop both front end and back end(http://localhost:8080/communityApp/shopadmin/shopoperation?shopId=1)" />
+    <MESSAGE value="1.added ShopList in both dao and service" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added ShopList in both dao and service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java</url>
-          <line>146</line>
+          <line>199</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java</url>
-          <line>103</line>
+          <line>156</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
