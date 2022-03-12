@@ -30,7 +30,7 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 			try {
 				int effectedNum = productCategoryDao.batchInsertProductCategory(productCategoryList);
 				if (effectedNum <= 0) {
-					throw new ProductCategoryOperationException("failed to create the shop category");
+					throw new ProductCategoryOperationException("failed to create the product category");
 				} else {
 					return new ProductCategoryExecution(ProductCategoryStateEnum.SUCCESS);
 				}
