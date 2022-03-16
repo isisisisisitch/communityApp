@@ -6,12 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productoperation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/productmanagement.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productoperation.js" afterDir="false" />
+    <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="1.completed add product in front end&#10;(http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1&#10;http://localhost:8080/communityApp/shopadmin/productoperation#)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ProductManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ProductManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +97,21 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.appTomcat8.5">
+    <configuration name="ProductDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communityApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ProductDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductDaoTest.testAInsertProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
@@ -140,22 +155,6 @@
       <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
       <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ProductImgDaoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductImgDaoTest.testCDeleteProductImgByProductId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="communityApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
-      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ProductImgDaoTest" />
-      <option name="METHOD_NAME" value="testCDeleteProductImgByProductId" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -251,18 +250,18 @@
     <list>
       <item itemvalue="Tomcat Server.appTomcat8.5" />
       <item itemvalue="JUnit.ProductImgDaoTest" />
-      <item itemvalue="JUnit.ProductImgDaoTest.testCDeleteProductImgByProductId" />
       <item itemvalue="JUnit.ProductDaoTest.testAInsertProduct" />
       <item itemvalue="JUnit.ProductDaoTest.testFDeleteShopAuthMap" />
       <item itemvalue="JUnit.ProductServiceTest.testAddProduct" />
+      <item itemvalue="JUnit.ProductDaoTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductDaoTest" />
         <item itemvalue="JUnit.ProductServiceTest.testAddProduct" />
         <item itemvalue="JUnit.ProductDaoTest.testFDeleteShopAuthMap" />
         <item itemvalue="JUnit.ProductDaoTest.testAInsertProduct" />
         <item itemvalue="JUnit.ProductImgDaoTest" />
-        <item itemvalue="JUnit.ProductImgDaoTest.testCDeleteProductImgByProductId" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +282,7 @@
       <workItem from="1647030014891" duration="3691000" />
       <workItem from="1647033752578" duration="3908000" />
       <workItem from="1647037816729" duration="11071000" />
-      <workItem from="1647448729828" duration="6732000" />
+      <workItem from="1647448729828" duration="9577000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -537,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647459523212</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="1.completed add product in front end&#10;(http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1&#10;http://localhost:8080/communityApp/shopadmin/productoperation#)">
+      <created>1647461979278</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1647461979278</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,7 +563,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.completed registerShop in ShopManagementController" />
     <MESSAGE value="1.added shopoperation.html for shop register front-end&#10;2.added ShopAdminController for parsing routes and forward them to the appropriate HTML files" />
     <MESSAGE value="1.added shopoperation.js for shop register front-end&#10;2.add js file in html" />
     <MESSAGE value="1.added shop category and area information acquisition&#10;2.test dao by ShopCategoryDaoTest&#10;3.test controller by http://localhost:8080/communityApp/shopadmin/shopoperation" />
@@ -582,7 +587,8 @@
     <MESSAGE value="1.fixed a ProductCategoryOperationException problem" />
     <MESSAGE value="1.added productDao(crud)&#10;2.added addProduct in productService&#10;3.tested productDao and addProduct in productService" />
     <MESSAGE value="1.added addproduct in productManagementController" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added addproduct in productManagementController" />
+    <MESSAGE value="1.completed add product in front end&#10;(http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1&#10;http://localhost:8080/communityApp/shopadmin/productoperation#)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.completed add product in front end&#10;(http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1&#10;http://localhost:8080/communityApp/shopadmin/productoperation#)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -606,6 +612,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java</url>
           <line>97</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ProductManagementController.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
