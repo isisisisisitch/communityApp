@@ -7,8 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ProductManagementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productoperation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/productmanagement.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productoperation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopAdminController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +44,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/css/shop" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -49,11 +52,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/css/shop" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/shop" />
       <recent name="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao" />
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/shop" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/css/shop" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ca.bytetube.communityApp.web.shopadmin" />
@@ -93,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductServiceTest.testAddProduct">
+  <component name="RunManager" selected="Tomcat Server.appTomcat8.5">
     <configuration name="ProductDaoTest.testAInsertProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
@@ -280,7 +283,7 @@
       <workItem from="1647030014891" duration="3691000" />
       <workItem from="1647033752578" duration="3908000" />
       <workItem from="1647037816729" duration="11071000" />
-      <workItem from="1647448729828" duration="4690000" />
+      <workItem from="1647448729828" duration="6732000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -527,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647452280917</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="1.added addproduct in productManagementController">
+      <created>1647459523212</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1647459523212</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +557,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.completed addShop in ShopService&#10;2.added exceptions" />
     <MESSAGE value="1.completed registerShop in ShopManagementController" />
     <MESSAGE value="1.added shopoperation.html for shop register front-end&#10;2.added ShopAdminController for parsing routes and forward them to the appropriate HTML files" />
     <MESSAGE value="1.added shopoperation.js for shop register front-end&#10;2.add js file in html" />
@@ -572,7 +581,8 @@
     <MESSAGE value="1.added remove product category in front-end&#10;(1.http://localhost:8080/communityApp/shopadmin/shoplist   &#10; to get currentShop)" />
     <MESSAGE value="1.fixed a ProductCategoryOperationException problem" />
     <MESSAGE value="1.added productDao(crud)&#10;2.added addProduct in productService&#10;3.tested productDao and addProduct in productService" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added productDao(crud)&#10;2.added addProduct in productService&#10;3.tested productDao and addProduct in productService" />
+    <MESSAGE value="1.added addproduct in productManagementController" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added addproduct in productManagementController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
