@@ -1,6 +1,7 @@
 package ca.bytetube.communityApp.service.impl;
 
 import ca.bytetube.communityApp.dao.ProductCategoryDao;
+import ca.bytetube.communityApp.dao.ProductDao;
 import ca.bytetube.communityApp.dto.ProductCategoryExecution;
 import ca.bytetube.communityApp.entity.ProductCategory;
 import ca.bytetube.communityApp.enums.ProductCategoryStateEnum;
@@ -17,6 +18,8 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 	@Autowired
 	private ProductCategoryDao productCategoryDao;
 
+	@Autowired
+	private ProductDao productDao;
 	@Override
 	public List<ProductCategory> getProductCategoryList(long shopId) {
 		return productCategoryDao.queryProductCategoryList(shopId);
@@ -48,7 +51,15 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 	@Transactional
 	public ProductCategoryExecution deleteProductCategory(long productCategoryId, long shopId)
 			throws ProductCategoryOperationException {
-		//todo 将此类别下的商品里的类别id置为null，再删除改商品类别
+		// 解除tb_product里的商品与该producategoryId的关联
+		try {
+			int effectedNum = productDao.updateProductCategoryToNull(productCategoryId);
+			if (effectedNum < 0) {
+				throw new ProductCategoryOperationException("product category update failed");
+			}
+		} catch (Exception e) {
+			throw new ProductCategoryOperationException("deleteProductCategory error: " + e.getMessage());
+		}
 
 		// 删除该productCategory
 		try {
