@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shoplist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/frontend/shoplist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/js/frontend" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -49,11 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/frontend" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html" />
-      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ca.bytetube.communityApp.web.shopadmin" />
@@ -283,7 +284,7 @@
       <workItem from="1647037816729" duration="11071000" />
       <workItem from="1647448729828" duration="20993000" />
       <workItem from="1648060643762" duration="6040000" />
-      <workItem from="1648229296125" duration="2721000" />
+      <workItem from="1648229296125" duration="4684000" />
     </task>
     <task id="LOCAL-00001" summary="1.completed 10 entities created&#10;2.completed 10 tables created">
       <created>1646251650948</created>
@@ -593,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648066615328</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="1.added ShopListController&#10;(http://localhost:8080/communityApp/frontend/listshopspageinfo)">
+      <created>1648237292028</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1648237292028</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +621,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.added getShopById in ShopManagementController(http://localhost:8080/communityApp/shopadmin/getshopbyid?shopId=1)&#10;2.added modifyShop in ShopManagementController&#10;3.get person info from session" />
     <MESSAGE value="1.added getShopInfo in shopoperation.js&#10;2.debugged getShopById and modifyShop both front end and back end(http://localhost:8080/communityApp/shopadmin/shopoperation?shopId=1)" />
     <MESSAGE value="1.added ShopList in both dao and service" />
     <MESSAGE value="1.added getShopList and getShopManagementInfo in controller" />
@@ -638,7 +645,8 @@
     <MESSAGE value="1.added index page" />
     <MESSAGE value="1.added index page&#10;(http://localhost:8080/communityApp/frontend/index)" />
     <MESSAGE value="1.fixed font of index.html&#10;2.fixed images can not be read&#10;(1.add config in tomcat/conf/server.xml &#10; &lt;Context docBase=&quot;/xxx/xxx/xxx/image/upload&quot;  path=&quot;/upload&quot; /&gt;&#10; &#10; 2.config intellij idea tomcat config &#10; choose deploy applications configured in Tomcat instance&#10;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.fixed font of index.html&#10;2.fixed images can not be read&#10;(1.add config in tomcat/conf/server.xml &#10; &lt;Context docBase=&quot;/xxx/xxx/xxx/image/upload&quot;  path=&quot;/upload&quot; /&gt;&#10; &#10; 2.config intellij idea tomcat config &#10; choose deploy applications configured in Tomcat instance&#10;)" />
+    <MESSAGE value="1.added ShopListController&#10;(http://localhost:8080/communityApp/frontend/listshopspageinfo)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added ShopListController&#10;(http://localhost:8080/communityApp/frontend/listshopspageinfo)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
