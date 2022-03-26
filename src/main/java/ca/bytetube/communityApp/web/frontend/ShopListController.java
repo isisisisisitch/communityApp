@@ -1,4 +1,4 @@
-package ca.bytetube.communityApp.web.shopadmin;
+package ca.bytetube.communityApp.web.frontend;
 
 
 import ca.bytetube.communityApp.dto.ShopExecution;
