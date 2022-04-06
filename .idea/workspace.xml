@@ -8,10 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/AreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/AreaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/AreaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/AreaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/AreaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/AreaServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/HeadLineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/HeadLineService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ShopCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/ShopCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/HeadLineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/HeadLineServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ShopCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/ShopCategoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -294,14 +294,7 @@
       <workItem from="1648229296125" duration="7550000" />
       <workItem from="1648243463785" duration="5512000" />
       <workItem from="1648663879333" duration="12792000" />
-      <workItem from="1649269428866" duration="7569000" />
-    </task>
-    <task id="LOCAL-00008" summary="1.completed logback configuration&#10;2.tested logback configuration">
-      <created>1646422170585</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1646422170585</updated>
+      <workItem from="1649269428866" duration="8410000" />
     </task>
     <task id="LOCAL-00009" summary="1.completed shop add and update">
       <created>1646424092525</created>
@@ -639,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649277884214</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="1.updated areaServiceImpl with redis&#10;2.test redis in areaService&#10;(note:modify &quot;protected-mode&quot; to &quot;no&quot; in redis.conf in remote server!And restart redis)">
+      <created>1649279802410</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1649279802410</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,7 +659,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.added remove product category in front-end&#10;(1.http://localhost:8080/communityApp/shopadmin/shoplist   &#10; to get currentShop)" />
     <MESSAGE value="1.fixed a ProductCategoryOperationException problem" />
     <MESSAGE value="1.added productDao(crud)&#10;2.added addProduct in productService&#10;3.tested productDao and addProduct in productService" />
     <MESSAGE value="1.added addproduct in productManagementController" />
@@ -684,7 +683,8 @@
     <MESSAGE value="1.added comments on WechatLoginController" />
     <MESSAGE value="1.added DES to encrypt key configuration information" />
     <MESSAGE value="1.added redis(jedis) configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added redis(jedis) configuration" />
+    <MESSAGE value="1.updated areaServiceImpl with redis&#10;2.test redis in areaService&#10;(note:modify &quot;protected-mode&quot; to &quot;no&quot; in redis.conf in remote server!And restart redis)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.updated areaServiceImpl with redis&#10;2.test redis in areaService&#10;(note:modify &quot;protected-mode&quot; to &quot;no&quot; in redis.conf in remote server!And restart redis)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
