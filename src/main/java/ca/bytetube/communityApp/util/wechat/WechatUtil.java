@@ -25,10 +25,6 @@ public class WechatUtil {
 
 	/**
 	 * 获取UserAccessToken实体类
-	 * 
-	 * @param code
-	 * @return
-	 * @throws IOException
 	 */
 	public static UserAccessToken getUserAccessToken(String code) throws IOException {
 		// 测试号信息里的appId
@@ -49,17 +45,17 @@ public class WechatUtil {
 			// 将json字符串转换成相应对象
 			token = objectMapper.readValue(tokenStr, UserAccessToken.class);
 		} catch (JsonParseException e) {
-			log.error("获取用户accessToken失败: " + e.getMessage());
+			log.error("Failed to get user accessToken: " + e.getMessage());
 			e.printStackTrace();
 		} catch (JsonMappingException e) {
-			log.error("获取用户accessToken失败: " + e.getMessage());
+			log.error("Failed to get user accessToken: " + e.getMessage());
 			e.printStackTrace();
 		} catch (IOException e) {
-			log.error("获取用户accessToken失败: " + e.getMessage());
+			log.error("Failed to get user accessToken: " + e.getMessage());
 			e.printStackTrace();
 		}
 		if (token == null) {
-			log.error("获取用户accessToken失败。");
+			log.error("Failed to get user accessToken.");
 			return null;
 		}
 		return token;
@@ -67,10 +63,6 @@ public class WechatUtil {
 
 	/**
 	 * 获取WechatUser实体类
-	 * 
-	 * @param accessToken
-	 * @param openId
-	 * @return
 	 */
 	public static WechatUser getUserInfo(String accessToken, String openId) {
 		// 根据传入的accessToken以及openId拼接出访问微信定义的端口并获取用户信息的URL
@@ -85,17 +77,17 @@ public class WechatUtil {
 			// 将json字符串转换成相应对象
 			user = objectMapper.readValue(userStr, WechatUser.class);
 		} catch (JsonParseException e) {
-			log.error("获取用户信息失败: " + e.getMessage());
+			log.error("Failed to get user information: " + e.getMessage());
 			e.printStackTrace();
 		} catch (JsonMappingException e) {
-			log.error("获取用户信息失败: " + e.getMessage());
+			log.error("Failed to get user information: " + e.getMessage());
 			e.printStackTrace();
 		} catch (IOException e) {
-			log.error("获取用户信息失败: " + e.getMessage());
+			log.error("Failed to get user information: " + e.getMessage());
 			e.printStackTrace();
 		}
 		if (user == null) {
-			log.error("获取用户信息失败。");
+			log.error("Failed to get user information.");
 			return null;
 		}
 		return user;
@@ -103,9 +95,6 @@ public class WechatUtil {
 
 	/**
 	 * 将WechatUser里的信息转换成PersonInfo的信息并返回PersonInfo实体类
-	 * 
-	 * @param user
-	 * @return
 	 */
 	public static PersonInfo getPersonInfoFromRequest(WechatUser user) {
 		PersonInfo personInfo = new PersonInfo();
@@ -118,14 +107,6 @@ public class WechatUtil {
 
 	/**
 	 * 发起https请求并获取结果
-	 * 
-	 * @param requestUrl
-	 *            请求地址
-	 * @param requestMethod
-	 *            请求方式（GET、POST）
-	 * @param outputStr
-	 *            提交的数据
-	 * @return json字符串
 	 */
 	public static String httpsRequest(String requestUrl, String requestMethod, String outputStr) {
 		StringBuffer buffer = new StringBuffer();

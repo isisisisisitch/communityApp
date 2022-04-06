@@ -23,7 +23,7 @@ import java.io.IOException;
 
 /**
  * 获取关注公众号之后的微信用户信息的接口，如果在微信浏览器里访问
- * https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8e9c4bd828891561&redirect_uri=http://47.90.179.171/communityApp/wechat/wechatlogin/logincheck&role_type=1&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect
+ * https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8e9c4bd828891561&redirect_uri=http://47.90.179.171/communityApp/wechatlogin/logincheck&role_type=1&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect
  * 则这里将会获取到code,之后再可以通过code获取到access_token 进而获取到用户信息
  *
  */
@@ -70,6 +70,10 @@ public class WechatLoginController {
 				e.printStackTrace();
 			}
 		}
+
+
+		//前面咱们获取到了openid后，可以通过它去db中判断该微信号是否存在
+		//若不存在的话可以自动创建，实现微信和网站的对接
 		// 若微信帐号为空则需要注册微信帐号，同时注册用户信息
 		if (auth == null) {
 			PersonInfo personInfo = WechatUtil.getPersonInfoFromRequest(user);

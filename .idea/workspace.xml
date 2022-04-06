@@ -8,26 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/PersonInfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/WechatAuthDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dto/PersonInfoExecution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dto/UserAccessToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dto/WechatAuthExecution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dto/WechatUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/enums/PersonInfoStateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/enums/WechatAuthStateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/PersonInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/WechatAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/PersonInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/WechatAuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/wechat/MyX509TrustManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/wechat/SignUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/wechat/WechatUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/wechat/WechatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/wechat/WechatLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/PersonInfoDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/WechatAuthDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/wechat/WechatUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/wechat/WechatUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/wechat/WechatLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/wechat/WechatLoginController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -312,14 +295,8 @@
       <workItem from="1648060643762" duration="6040000" />
       <workItem from="1648229296125" duration="7550000" />
       <workItem from="1648243463785" duration="5512000" />
-      <workItem from="1648663879333" duration="4919000" />
-    </task>
-    <task id="LOCAL-00004" summary="1.completed service and web configuration&#10;2.Integrated three layers of Spring">
-      <created>1646255515632</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1646255515632</updated>
+      <workItem from="1648663879333" duration="12792000" />
+      <workItem from="1649269428866" duration="3286000" />
     </task>
     <task id="LOCAL-00005" summary="1.tested AreaDao&#10;2.fixed dependency version problems">
       <created>1646257043026</created>
@@ -657,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648674135003</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="1.added wechat">
+      <created>1648677466708</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1648677466708</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,7 +661,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.add product category management front end &#10;(1.http://localhost:8080/communityApp/shopadmin/shoplist&#10; 2. http://localhost:8080/communityApp/shopadmin/productcategorymanagement)&#10; 2.add route productcategorymanagement in shopAdminController" />
     <MESSAGE value="1.added batchAddProductCategory" />
     <MESSAGE value="1.added addproductcategorys in front-end &#10;(1.http://localhost:8080/communityApp/shopadmin/shoplist&#10; 2.http://localhost:8080/communityApp/shopadmin/productcategorymanagement)" />
     <MESSAGE value="1.added remove product category in back-end" />
@@ -702,7 +685,8 @@
     <MESSAGE value="1.modified characters" />
     <MESSAGE value="1.move shoplistcontroller from package shopadmin to frontend" />
     <MESSAGE value="1.updated jdbc info" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.updated jdbc info" />
+    <MESSAGE value="1.added wechat" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added wechat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
