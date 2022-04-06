@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="communityApp:war" />
       <artifact name="communityApp:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/DESUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/EncryptPropertyPlaceholderConfigurer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/wechat/WechatUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/wechat/WechatUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/wechat/WechatLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/wechat/WechatLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,23 +59,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ca.bytetube.communityApp.util.wechat" />
-      <recent name="ca.bytetube.communityApp.dto" />
-      <recent name="ca.bytetube.communityApp.dao" />
-      <recent name="ca.bytetube.communityApp.service.impl" />
-      <recent name="ca.bytetube.communityApp.enums" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/js/frontend" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ca.bytetube.communityApp.util" />
+      <recent name="ca.bytetube.communityApp.util.wechat" />
+      <recent name="ca.bytetube.communityApp.dto" />
+      <recent name="ca.bytetube.communityApp.dao" />
+      <recent name="ca.bytetube.communityApp.service.impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -104,6 +105,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.appTomcat8.5">
+    <configuration name="DESUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.communityApp.util.DESUtil" />
+      <module name="communityApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.bytetube.communityApp.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HeadLineDaoTest.testQueryArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
@@ -131,22 +145,6 @@
       <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
       <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ProductDaoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductDaoTest.testAInsertProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="communityApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
-      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ProductDaoTest" />
-      <option name="METHOD_NAME" value="testAInsertProduct" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -257,20 +255,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ProductDaoTest.testAInsertProduct" />
       <item itemvalue="JUnit.ProductDaoTest.testFDeleteShopAuthMap" />
       <item itemvalue="JUnit.ProductServiceTest.testAddProduct" />
       <item itemvalue="JUnit.ProductDaoTest" />
       <item itemvalue="JUnit.HeadLineDaoTest.testQueryArea" />
       <item itemvalue="Tomcat Server.appTomcat8.5" />
+      <item itemvalue="Application.DESUtil" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DESUtil" />
         <item itemvalue="JUnit.HeadLineDaoTest.testQueryArea" />
         <item itemvalue="JUnit.ProductDaoTest" />
         <item itemvalue="JUnit.ProductServiceTest.testAddProduct" />
         <item itemvalue="JUnit.ProductDaoTest.testFDeleteShopAuthMap" />
-        <item itemvalue="JUnit.ProductDaoTest.testAInsertProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -296,14 +294,7 @@
       <workItem from="1648229296125" duration="7550000" />
       <workItem from="1648243463785" duration="5512000" />
       <workItem from="1648663879333" duration="12792000" />
-      <workItem from="1649269428866" duration="3286000" />
-    </task>
-    <task id="LOCAL-00005" summary="1.tested AreaDao&#10;2.fixed dependency version problems">
-      <created>1646257043026</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1646257043026</updated>
+      <workItem from="1649269428866" duration="4622000" />
     </task>
     <task id="LOCAL-00006" summary="1.tested AreaService and AreaController">
       <created>1646259673788</created>
@@ -641,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648677466708</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="1.added comments on WechatLoginController">
+      <created>1649275321952</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1649275321953</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +659,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.added batchAddProductCategory" />
     <MESSAGE value="1.added addproductcategorys in front-end &#10;(1.http://localhost:8080/communityApp/shopadmin/shoplist&#10; 2.http://localhost:8080/communityApp/shopadmin/productcategorymanagement)" />
     <MESSAGE value="1.added remove product category in back-end" />
     <MESSAGE value="1.added remove product category in front-end&#10;(1.http://localhost:8080/communityApp/shopadmin/shoplist   &#10; to get currentShop)" />
@@ -686,7 +683,8 @@
     <MESSAGE value="1.move shoplistcontroller from package shopadmin to frontend" />
     <MESSAGE value="1.updated jdbc info" />
     <MESSAGE value="1.added wechat" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added wechat" />
+    <MESSAGE value="1.added comments on WechatLoginController" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added comments on WechatLoginController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -720,6 +718,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ProductManagementController.java</url>
           <line>121</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/EncryptPropertyPlaceholderConfigurer.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
