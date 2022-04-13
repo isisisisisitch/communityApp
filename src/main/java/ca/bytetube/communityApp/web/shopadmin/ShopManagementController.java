@@ -70,12 +70,12 @@ public class ShopManagementController {
 	private Map<String, Object> getShopList(HttpServletRequest request) {
 		Map<String, Object> modelMap = new HashMap<>();
 
-		//todo 由于目前没有实现login，所以先设定默认值
-		PersonInfo user = new PersonInfo();
-		user.setUserId(1L);
-		user.setName("test");
-		request.getSession().setAttribute("user",user);
-		user = (PersonInfo) request.getSession().getAttribute("user");
+//		//todo 由于目前没有实现login，所以先设定默认值
+//		PersonInfo user = new PersonInfo();
+//		user.setUserId(1L);
+//		user.setName("test");
+//		request.getSession().setAttribute("user",user);
+		PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
 		try {
 			Shop shopCondition = new Shop();
 			shopCondition.setOwner(user);

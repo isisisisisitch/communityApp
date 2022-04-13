@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/interceptor/shopadmin/ShopLoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/interceptor/shopadmin/ShopPermissionInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/interceptor/superadmin/SuperAdminLoginInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/shopadmin/ShopManagementController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -300,14 +297,7 @@
       <workItem from="1649553495925" duration="3301000" />
       <workItem from="1649806337442" duration="13403000" />
       <workItem from="1649880738847" duration="1051000" />
-      <workItem from="1649882562764" duration="1647000" />
-    </task>
-    <task id="LOCAL-00013" summary="1.completed registerShop in ShopManagementController">
-      <created>1646431927941</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1646431927941</updated>
+      <workItem from="1649882562764" duration="2265000" />
     </task>
     <task id="LOCAL-00014" summary="1.added shopoperation.html for shop register front-end&#10;2.added ShopAdminController for parsing routes and forward them to the appropriate HTML files">
       <created>1646582033055</created>
@@ -645,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649882496347</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="1.added interceptor">
+      <created>1649884448815</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1649884448815</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +662,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.added product list in backend&#10;2.tested product controller&#10;(http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1&#10;http://localhost:8080/communityApp/shopadmin/getproductlistbyshop?pageIndex=1&amp;pageSize=50&#10;)" />
     <MESSAGE value="1.added product list in frontend&#10;2.tested product list&#10;(http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1)" />
     <MESSAGE value="1.disassociate product and product category" />
     <MESSAGE value="1.completed headLine dao &#10;2.added headLine listmainpageinfo  &#10;(http://localhost:8080/communityApp/frontend/listmainpageinfo)" />
@@ -690,7 +686,8 @@
     <MESSAGE value="1.added localAuth dao and service&#10;2.tested localAuth dao and service" />
     <MESSAGE value="1.added localAuth controller&#10;2.added local front end" />
     <MESSAGE value="1.added localAuth controller&#10;2.added local front end(http://localhost:8080/communityApp/shopadmin/shoplist)" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added localAuth controller&#10;2.added local front end(http://localhost:8080/communityApp/shopadmin/shoplist)" />
+    <MESSAGE value="1.added interceptor" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added interceptor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
