@@ -6,11 +6,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/CacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/CacheServiceImpl.java" afterDir="false" />
+    <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="1.added cache remove">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dao/LocalAuthDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/dto/LocalAuthExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/enums/LocalAuthStateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/LocalAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/LocalAuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/util/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/LocalAuthDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/dao/LocalAuthDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/LocalAuthServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/AreaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/AreaServiceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +57,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -59,20 +65,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/spring" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ca.bytetube.communityApp.service.impl" />
-      <recent name="ca.bytetube.communityApp.service" />
+      <recent name="ca.bytetube.community.dao" />
+      <recent name="ca.bytetube.community.service" />
       <recent name="ca.bytetube.communityApp.util" />
-      <recent name="ca.bytetube.communityApp.util.wechat" />
-      <recent name="ca.bytetube.communityApp.dto" />
+      <recent name="ca.bytetube.communityApp.service.impl" />
+      <recent name="ca.bytetube.communityApp.enums" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -103,9 +110,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AreaServiceTest.testGetAreaList">
-    <configuration name="DESUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.bytetube.communityApp.util.DESUtil" />
+  <component name="RunManager" selected="JUnit.LocalAuthServiceTest.testBModifyLocalAuth">
+    <configuration name="MD5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.communityApp.util.MD5" />
       <module name="communityApp" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +124,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AreaDaoTest.testQueryArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalAuthDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
         <pattern>
@@ -126,14 +133,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
-      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.AreaDaoTest" />
-      <option name="METHOD_NAME" value="testQueryArea" />
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.LocalAuthDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocalAuthDaoTest.testAInsertLocalAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="communityApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.LocalAuthDaoTest" />
+      <option name="METHOD_NAME" value="testAInsertLocalAuth" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AreaServiceTest.testGetAreaList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalAuthServiceTest.testABindLocalAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
         <pattern>
@@ -142,40 +164,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ca.bytetube.community.service" />
-      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.service.AreaServiceTest" />
-      <option name="METHOD_NAME" value="testGetAreaList" />
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.service.LocalAuthServiceTest" />
+      <option name="METHOD_NAME" value="testABindLocalAuth" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeadLineDaoTest.testQueryArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalAuthServiceTest.testBModifyLocalAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="communityApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
+          <option name="PATTERN" value="ca.bytetube.community.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
-      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.HeadLineDaoTest" />
-      <option name="METHOD_NAME" value="testQueryArea" />
+      <option name="PACKAGE_NAME" value="ca.bytetube.community.service" />
+      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.service.LocalAuthServiceTest" />
+      <option name="METHOD_NAME" value="testBModifyLocalAuth" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="communityApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.bytetube.community.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.bytetube.community.dao" />
-      <option name="MAIN_CLASS_NAME" value="ca.bytetube.community.dao.ProductDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -254,20 +261,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ProductDaoTest" />
-      <item itemvalue="JUnit.HeadLineDaoTest.testQueryArea" />
       <item itemvalue="Tomcat Server.appTomcat8.5" />
-      <item itemvalue="Application.DESUtil" />
-      <item itemvalue="JUnit.AreaDaoTest.testQueryArea" />
-      <item itemvalue="JUnit.AreaServiceTest.testGetAreaList" />
+      <item itemvalue="JUnit.LocalAuthDaoTest" />
+      <item itemvalue="JUnit.LocalAuthDaoTest.testAInsertLocalAuth" />
+      <item itemvalue="Application.MD5" />
+      <item itemvalue="JUnit.LocalAuthServiceTest.testABindLocalAuth" />
+      <item itemvalue="JUnit.LocalAuthServiceTest.testBModifyLocalAuth" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AreaServiceTest.testGetAreaList" />
-        <item itemvalue="JUnit.AreaDaoTest.testQueryArea" />
-        <item itemvalue="Application.DESUtil" />
-        <item itemvalue="JUnit.HeadLineDaoTest.testQueryArea" />
-        <item itemvalue="JUnit.ProductDaoTest" />
+        <item itemvalue="JUnit.LocalAuthServiceTest.testBModifyLocalAuth" />
+        <item itemvalue="JUnit.LocalAuthServiceTest.testABindLocalAuth" />
+        <item itemvalue="JUnit.LocalAuthDaoTest.testAInsertLocalAuth" />
+        <item itemvalue="Application.MD5" />
+        <item itemvalue="JUnit.LocalAuthDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -293,14 +300,10 @@
       <workItem from="1648229296125" duration="7550000" />
       <workItem from="1648243463785" duration="5512000" />
       <workItem from="1648663879333" duration="12792000" />
-      <workItem from="1649269428866" duration="9229000" />
-    </task>
-    <task id="LOCAL-00010" summary="1.completed image util">
-      <created>1646425909448</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1646425909448</updated>
+      <workItem from="1649269428866" duration="16109000" />
+      <workItem from="1649433267849" duration="2355000" />
+      <workItem from="1649553495925" duration="3301000" />
+      <workItem from="1649806337442" duration="11274000" />
     </task>
     <task id="LOCAL-00011" summary="1.completed shopExecution">
       <created>1646426777668</created>
@@ -638,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649280533842</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="1.added cache remove">
+      <created>1649281326100</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1649281326100</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +668,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.added productDao(crud)&#10;2.added addProduct in productService&#10;3.tested productDao and addProduct in productService" />
     <MESSAGE value="1.added addproduct in productManagementController" />
     <MESSAGE value="1.completed add product in front end&#10;(http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1&#10;http://localhost:8080/communityApp/shopadmin/productoperation#)" />
     <MESSAGE value="1.added modifyproduct and  getproductbyid in back end&#10;2.debugged modifyproduct in both front and back end (http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1&#10;http://localhost:8080/communityApp/shopadmin/productoperation?productId=1)" />
@@ -683,7 +692,8 @@
     <MESSAGE value="1.added redis(jedis) configuration" />
     <MESSAGE value="1.updated areaServiceImpl with redis&#10;2.test redis in areaService&#10;(note:modify &quot;protected-mode&quot; to &quot;no&quot; in redis.conf in remote server!And restart redis)" />
     <MESSAGE value="1.updated HeadlineServiceImpl and shopCategoryServiceImpl with redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.updated HeadlineServiceImpl and shopCategoryServiceImpl with redis" />
+    <MESSAGE value="1.added cache remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added cache remove" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -727,11 +737,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/AreaServiceImpl.java</url>
           <line>38</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ca/bytetube/community/service/AreaServiceTest.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
