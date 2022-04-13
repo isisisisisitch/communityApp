@@ -7,17 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f710d9c-2233-4079-a88a-228b5a3e818e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/local/LocalAuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web/local/LocalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/accountbind.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/changepsw.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/local/accountbind.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/local/changepsw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/local/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/local/logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/interceptor/shopadmin/ShopLoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/interceptor/shopadmin/ShopPermissionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/interceptor/superadmin/SuperAdminLoginInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,19 +52,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/interceptor" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html" />
-      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ca.bytetube.community.dao" />
@@ -79,10 +71,12 @@
       <recent name="ca.bytetube.communityApp.service.impl" />
       <recent name="ca.bytetube.communityApp.enums" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop" />
-      <recent name="$PROJECT_DIR$" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/interceptor" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/js" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/html" />
+      <recent name="$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/web" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -305,14 +299,8 @@
       <workItem from="1649433267849" duration="2355000" />
       <workItem from="1649553495925" duration="3301000" />
       <workItem from="1649806337442" duration="13403000" />
-      <workItem from="1649880738847" duration="717000" />
-    </task>
-    <task id="LOCAL-00012" summary="1.completed addShop in ShopService&#10;2.added exceptions">
-      <created>1646428974644</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1646428974644</updated>
+      <workItem from="1649880738847" duration="1051000" />
+      <workItem from="1649882562764" duration="1647000" />
     </task>
     <task id="LOCAL-00013" summary="1.completed registerShop in ShopManagementController">
       <created>1646431927941</created>
@@ -650,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649878590135</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="1.added localAuth controller&#10;2.added local front end(http://localhost:8080/communityApp/shopadmin/shoplist)">
+      <created>1649882496347</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1649882496347</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,8 +665,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.completed add product in front end&#10;(http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1&#10;http://localhost:8080/communityApp/shopadmin/productoperation#)" />
-    <MESSAGE value="1.added modifyproduct and  getproductbyid in back end&#10;2.debugged modifyproduct in both front and back end (http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1&#10;http://localhost:8080/communityApp/shopadmin/productoperation?productId=1)" />
     <MESSAGE value="1.added product list in backend&#10;2.tested product controller&#10;(http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1&#10;http://localhost:8080/communityApp/shopadmin/getproductlistbyshop?pageIndex=1&amp;pageSize=50&#10;)" />
     <MESSAGE value="1.added product list in frontend&#10;2.tested product list&#10;(http://localhost:8080/communityApp/shopadmin/shopmanagement?shopId=1)" />
     <MESSAGE value="1.disassociate product and product category" />
@@ -695,7 +688,9 @@
     <MESSAGE value="1.updated HeadlineServiceImpl and shopCategoryServiceImpl with redis" />
     <MESSAGE value="1.added cache remove" />
     <MESSAGE value="1.added localAuth dao and service&#10;2.tested localAuth dao and service" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.added localAuth dao and service&#10;2.tested localAuth dao and service" />
+    <MESSAGE value="1.added localAuth controller&#10;2.added local front end" />
+    <MESSAGE value="1.added localAuth controller&#10;2.added local front end(http://localhost:8080/communityApp/shopadmin/shoplist)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.added localAuth controller&#10;2.added local front end(http://localhost:8080/communityApp/shopadmin/shoplist)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -739,6 +734,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/service/impl/AreaServiceImpl.java</url>
           <line>38</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/bytetube/communityApp/interceptor/shopadmin/ShopLoginInterceptor.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
